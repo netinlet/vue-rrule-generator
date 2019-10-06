@@ -1,0 +1,74 @@
+{
+  "name": "vue-rrule-generator",
+  "version": "0.0.1",
+  "description": "Vue Based Rrule Generator",
+  "author": {
+    "name": "Doug Bryant",
+    "email": "doug@netinlet.com",
+    "url": "https://netinlet.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netinlet/vue-rrule-generator"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service demo",
+    "docs": "npm run docs:serve",
+    "docs:build": "vue-cli-service docs --mode build",
+    "docs:serve": "vue-cli-service docs --mode serve",
+    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "start": "vue-cli-service serve"
+  },
+  "main": "dist/vue-rrule-generator.common.js",
+  "module": "dist/vue-rrule-generator.esm.js",
+  "unpkg": "dist/vue-rrule-generator.umd.min.js",
+  "files": [
+    "dist/vue-rrule-generator.common.js",
+    "dist/vue-rrule-generator.umd.min.js",
+    "dist/vue-rrule-generator.umd.js",
+    "dist/vue-rrule-generator.esm.js",
+    "src"
+  ],
+  "dependencies": {
+    "core-js": "^2.6.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-p11n": "^0.4.0",
+    "vue-template-compiler": "^2.6.10",
+    "vue": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "jsdelivr": "dist/vue-rrule-generator.umd.min.js",
+  "sideeffects": false
+}
